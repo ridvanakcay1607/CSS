@@ -1,0 +1,38 @@
+/* yerel variable/değişken */
+p {
+    --renk: red;
+    background-color: var(--renk);
+}
+
+/* bu şekilde yerel değişken atanır.
+eğer oluşturulan bu değişken bbaşka bir etikete kullanılmak
+istenirse çalışmaz çünük sadece bağlı olduğu etikette çalışır. 
+Aşağıdaki h4 örneğine bak  */
+h4 {
+    background-color: var(--renk);
+}
+
+/* görüşldüğü gibi p etiketine atana değişken h4 etiketine etki etmedi. */
+
+
+
+/* global variable ile (: root)
+ tüm etikelere etki edilir.  */
+:root {
+    --renk: red;
+}
+
+/* artık p ve h4 etiketlerine etki edilmiş oldu. p etiketindeki 
+--renk: red; kısmı artık silinebilir */
+
+
+/* 
+ie tarayıcı değişkenleri desteklemiyor bu nedenle '@support' kullanılır.
+
+@support (--renk: red ) {
+    p{
+        color: var (--renk)
+    }
+}
+
+ */

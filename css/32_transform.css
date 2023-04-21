@@ -1,0 +1,50 @@
+/* scale */
+.box1 {
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    transform: scaley(2);
+}
+
+
+
+/* translate */
+.box2 {
+    width: 300px;
+    height: 300px;
+    background-color: steelblue;
+    transform: translate(50px, 200px);
+}
+
+
+
+/* rotate */
+.box3 {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    transform: rotate(120deg);
+}
+/* deg- derece */
+
+
+
+/* skew */
+.box4 {
+    width: 300px;
+    height: 300px;
+    background-color:darkblue;
+    transform: skew(30deg, 25deg );
+}
+
+
+
+
+/* matrix */
+.box5 {
+    width: 200px;
+    height: 200px;
+    background-color:sandybrown;
+    transform: matrix(1, 0, 0, 2, 100, 120);
+}
+/* px ve deg gibi ölçü değerleri girilmez */

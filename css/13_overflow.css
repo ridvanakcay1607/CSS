@@ -1,0 +1,13 @@
+p{
+    width: 350px;
+    height: 200px;
+    background-color:coral;
+    overflow: scroll;
+
+}
+/* 
+visible ile (default) öğe dışarı taşar ve gizlenmez görüntülenir.
+hidden ile taşan öğe gizlenir gözükmez
+scroll ile taşan öğe scrullbar ile görüntülenir
+auto ise scroll ile aynı özelliktedir
+ */

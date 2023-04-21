@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="/CSS/css/5_dom.css">
+
+</head>
+
+<body>
+
+
+    <!-- 
+    Dom hiyerarşisine göre:
+    parent child seçiciler,
+    dieğer seçiciler,
+    evrensel seçiciler,
+
+    HTML de yazılan kodlar içerisindeki etiketlerin kendi içerisinde bulunan
+    diğer elementlerle oluşturduğu yapıya dom hiyerarşisi denir.
+
+
+    DOM hiyerarşisi, bir web sayfasının içeriğinin, HTML kodu tarafından oluşturulan bir ağaç yapısıdır. Bu yapı, 
+    bir web sayfasındaki her öğeyi, öğelerin birbirleriyle olan ilişkilerini ve bu ilişkilerin düzenini tanımlar.
+    DOM, "Document Object Model" kelimelerinin kısaltmasıdır ve bir web sayfasının tüm öğelerini JavaScript gibi 
+    programlama dilleriyle etkileşim kurmaya olanak tanır. DOM ağacı, her öğenin bir "ana öğesi" (parent) ve alt öğeleri
+    (children) olduğu bir ağaç şeklindedir. Kök öğe (root element), genellikle <html> öğesidir ve tüm diğer öğeler bu öğenin 
+    altında yer alır.
+-->
+
+    <!--
+    dom hiyerarşisine örnek
+    1-) parent child seçici
+    -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Developer</a></li>
+            <li><a href="#">Team</a></li>
+        </ul>
+    </nav>
+
+</div>
+
+
+
+
+<!-- 2-)Bitişik kardeş seçici -->
+<div>
+    <h2>Başlık 1</h2>
+    <h4>Lorem ipsum dolor sit amet.</h4>
+</div>
+
+
+
+<!-- 3-) yaklaşık seçici -->
+<div>
+    <h2>Başlık2</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div>yeni alan</div>
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+
+
+
+<!--
+    4-) Evrensel seçici:
+    html dosyası içinde yazılan bütün kodlara etki eder
+    ' * ' işareti ile yapılır. 
+    not: kodları css dosyasında
+-->
+
+
+
+
+
+<!-- bitişk kardeş örneği -->
+<div class="resimler">
+    <img src="/HTML/image/bild01.jpg" alt="#" class="foto"> 
+    <img src="/HTML/image/bild01.jpg" alt="#">
+    <img src="/HTML/image/bild02.png" alt="#" class="foto">
+    <img src="/HTML/image/bild02.png" alt="#">
+</div>
+
+   <!-- bild01 olanlar küçük resim 
+        bild02 olanlar büyük resim olacak
+    -->
+
+
+</body>
+
+</html>

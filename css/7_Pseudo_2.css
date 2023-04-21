@@ -1,0 +1,51 @@
+/* ::selection
+maus ile üzeri seçildiğinde farlı özellik kazanmasını sağlar  */
+
+p::selection {
+    background-color: darkcyan;
+}
+
+
+/* :first-child 
+ilk çocuk nesne seçilir yani bu örnekte ilk p etiketi seçilir*/
+p:first-child{
+    background-color:blueviolet
+}
+
+
+/* :last-child 
+son çocuk nesne seçilir yani bu örnekte son p etiketi seçilir*/
+p:last-child{
+    background-color:gold
+}
+
+
+/* :empty
+varsa boş nesneleri seçer */
+h4:empty{
+    background-color: darkseagreen;
+    height: 15px;
+}
+/* h4 boş nesne olduğu için hacmi yoktur ondan bundan dolayı gözükmesi için ölçü verdim  */
+
+
+
+/* :not
+değilse manasına gelir */
+
+h5:not(:last-child){
+    margin-bottom: 50px;
+}
+
+/* last-child değilse margin-bottom 50px olsun */
+
+
+
+/* :checked
+checkbox a tıklanıldığında verilen özellikler gösterilir
+*/
+input:checked + span{
+    background-color:lime;
+    color:white;
+}
+/* checkbox a tıklandığında arka plan lime yazı rengi beyaz olur */

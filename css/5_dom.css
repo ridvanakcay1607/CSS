@@ -1,0 +1,101 @@
+/* dom yapısına göre seçiciler */
+
+
+/* 1-) parent child seçici*/
+nav ul li a {
+    color: coral;
+}
+
+/* en fazla kullanılan css kodlarından biridir */
+
+
+/* 
+    parent child seçiciler de filtreleme:
+    nuv ul li a  aralıklarından birine > işareti konulursa, işaret
+    sonrasındaki kısmın parent child ilişkisi kopar
+
+  <nav>
+        <ul>
+            <li>
+                <div> 
+                    <a href="#">Home</a> 
+                </div>
+            </li>
+
+            <li>
+            <a href="#">Developer</a>
+            </li>
+            <li>
+            <a href="#">Team</a>
+            </li>
+        </ul>
+    </nav>
+
+    örnekte olduğu gibi li etiketi ile a etiketi arasında herhangi bir html etiketi olmaması gerekir
+    div etiketi burda ilişkiyi bozuyor
+*/
+
+
+
+
+
+/* 2-)Bitişik kardeş seçici + işaretiyle yapılır, sadece kendisinden
+sonraki etiketi seçer. yani aşağıdaki örnekte h4 seçilir */
+
+h2 + h4 {
+    background: cornflowerblue;
+}
+
+
+/*  3-) yaklaşık seçici ~ işareti : kendisinden sonraki etiketleri seçer
+yani aşağıdaki örnekte h2 den sonraki bütün p ler seçilir   */
+
+h2 ~ p {
+    background:plum ;
+}
+
+
+
+/*
+    4-) Evrensel seçici
+    html dosyası içinde yazılan bütün kodlara etki eder
+    ' * ' işareti ile yapılır. 
+    daha çok aşağıdaki değerleri sıfırlamada kullanılır.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+
+
+/* bitişk kardeş örneği */
+.foto {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+.foto + img {
+width: 500px;
+height: auto;
+display: none;
+position: absolute;
+}
+
+
+/* display: none 
+elementi gizlemek için kullanılır.
+bu örnekte büyük olarak ayarlanan resimler gizlendi çünkü küçük olan resmin
+üzerine gelince büyük resim gözükecek  */
+
+/* cursor: pointer; resmin üzerine gelindiğinde maus hareketi ile devam edr  */
+
+
+
+.foto:hover + img {
+    display: block;
+}

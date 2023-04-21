@@ -1,0 +1,21 @@
+button {
+    padding: 30px;
+    background-color: dodgerblue;
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2000ms;
+    transition: 1s all ease-in 2s;
+}
+/* tüm efektler tek kod satırında bu şekilde yazılır:
+transition: 1s all ease-in 2s;  */
+
+
+button:hover {
+    background-color: salmon;
+}

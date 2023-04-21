@@ -1,0 +1,26 @@
+
+
+/* float kullanımı */
+.box1 {
+    width: 500px;
+}
+
+.box1 img {
+    width: 300px;
+    height: auto;
+    float: left;
+}
+
+
+
+/* shape outside kullanımı */
+.box2 {
+    width: 500px;
+}
+
+.box2 img {
+    width: 300px;
+    height: auto;
+    float: left;
+    shape-outside: circle();
+}

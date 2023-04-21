@@ -1,0 +1,18 @@
+.calc {
+    width: calc(50% * 2);
+    width: -webkit- calc(50% * 2);
+    height: 250px;
+    overflow: hidden;
+}
+
+.calc img {
+    width: 100%;
+}
+
+/* 
+desteklemeyen tarayıcılar için  aşağıdaki örnekte olduğu gibi
+webkit ön eki kullanılır.
+
+width: -webkit- calc(50% * 2);
+
+*/

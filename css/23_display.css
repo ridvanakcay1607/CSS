@@ -1,0 +1,37 @@
+div,
+p,
+span {
+    background: orangered;
+    width: 300px;
+    height: 50px;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+p {
+    background-color: royalblue;
+    color: white;
+}
+
+
+
+
+/* satır içi-inline */
+span {
+    background-color: lime;
+    color: black;
+}
+
+/* 
+inline özelliğine sahip elementlere display:block özelliği verilebilir
+block ve inline-blockwidth elementler
+width ve heigth dan etkilenir
+inline elementler etkilenmez (inline elementlere width ve heigth verilemez)
+ayrıca margin ve padding de kısmi verilebilir
+
+display:none özelliği elementi kaldırarak gizler. 
+opacity de elementleri gizler fakat kaldırmaz
+
+*/

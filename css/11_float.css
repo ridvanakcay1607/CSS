@@ -1,0 +1,40 @@
+/*  1. float kullanımı  */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+
+}
+
+
+
+.box:nth-child(2) {
+    float: right;
+}
+/* 2.kutu sağ kaydırıldı */
+
+
+
+.clear {
+    clear: both;
+}
+/* 2.kutu sağa kaydırıldıktan sonra yeri boş kalması için  */
+
+
+
+
+
+
+/*  2. float kullanımı sola veya sağa doğru */
+.kutu {
+    width: 200px;
+    height: 200px;
+    background-color:tomato;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    float: left;
+}

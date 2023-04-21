@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+
+    <link rel="stylesheet" href="/CSS/css/8_Pseudo_3.css">
+
+</head>
+
+<body>
+
+
+    <!-- 
+        A)
+        :first-child                elementin ilk child nesnesi ise seçim yapar
+        :last-child                 elementin son child nesnesi ise seçim yapar
+
+        B)
+        :first-of-type              kardeş elementin ilkini seçer
+        :last-of-type               kardeş elementin sondakini seçer
+
+    -->
+
+
+
+    <!-- A) -->
+    <div>
+        <h1>elementin ilk nesnesi</h1>
+        <p>elementin son nesnesi</p>
+    </div>
+
+
+    <!-- B) -->
+    <div>
+        <h2>kardeş element</h2>
+        <h3>ilk kardeş element</h3>
+        <h4>son kardeş element</h4>
+        <h5>kardeş element</h5>
+    </div>
+    <!--not: normalde ilk element h2 olmasına rağmen istenilen h3 olduğu için h3 ilk element pozisyonuna geçer -->
+    <!--not: normalde son element h5 olmasına rağmen istenilen h4 olduğu için h4 son element pozisyonuna geçer -->
+
+
+
+
+</body>
+
+</html>

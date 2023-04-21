@@ -1,0 +1,47 @@
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+
+}
+
+
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color:tomato;
+}
+
+
+
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: -10;
+    width: 0;
+    height: 2px;
+    background-color:cornflowerblue;
+    transition: 300ms all;
+}
+
+/*
+content: 
+linklerin altında çizgi oluşması için
+transition: 300ms all;
+alt çizgilerin animasyonlu olarak gelmesi için 
+*/
+
+
+
+nav ul li a:hover::after {
+    width: 100%;
+}

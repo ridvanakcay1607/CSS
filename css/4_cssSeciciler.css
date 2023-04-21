@@ -1,0 +1,47 @@
+/* 1. CSS seçici kod türleri */
+
+/* id için */
+#test {
+
+    color: blue;
+}
+
+
+/* class için  */
+.test {
+    color: black;
+}
+
+
+
+/* 2.Yazım türü */
+
+[class="test"] {
+    background-color: lime;
+}
+
+/* filtreleme özelliği $ : class ismi ile bitenleri seçer*/
+[class $="test"] {
+    background-color: red;
+}
+
+/* filtreleme özelliği ^ : class ismi ile başlayanları seçer*/
+[class ^="test"] {
+    background-color:darkgray;
+}
+
+/* filtreleme özelliği * : içerisinde class ismi geçenleri seçer*/
+[class *="test"] {
+    background-color:darkorange;
+}
+
+
+/* filtreleme özelliği ~ : class isminde boşluk varsa seçer*/
+[class ~="test"] {
+    background-color:lime;
+}
+
+/* filtreleme özelliği | : class ismi arasında(isim başta olmak zorunda örn: test-100) - işareti varsa seçer*/
+[class |="test"] {
+    background-color:darkcyan;
+}

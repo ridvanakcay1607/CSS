@@ -1,0 +1,19 @@
+p {
+    background-color: lime;
+
+    padding: 30px;
+    font-size: 30px;
+    color: black !important;
+}
+
+
+
+p {
+    color: blue;
+}
+
+/* 2. p etiketiyle color değiştirildi fakat;
+örneğin 1. p etiketinde verilen siyah rengin hiçbir zaman değiştirilmemesi
+istenirse
+color: black !important; kodu kullanılır
+ */

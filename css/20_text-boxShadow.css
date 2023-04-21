@@ -1,0 +1,46 @@
+/* box-shadow */
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: lime;
+    box-shadow: 20px 20px 0 0 black;
+}
+
+/* box-shadow:
+parametreleriyle birlikte gölgenin yerini seçmek için kullanılır.
+sıralama aşağıdaki gibi;
+
+x ekseni : box un orta sol-sağ aralığı
+y ekseni : box un orta alt-üst aralığı
+blur: gölgeyi bulanıklaştırmak için kullanılır
+radius: gölge genişliğini ayarlamak için kullanılır
+color:
+*/
+
+
+
+
+/* text-shadow  */
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    box-shadow: inset 0 0 50px 0 black, 0 0 50px 0 black;
+}
+
+/* yukarıdaki örnekteki gibi birden fazla gölgelendirme parametresi kullanılabilir.
+box-shadow: inset 0 0 50px 0 black, 0 0 50px 0 black; */
+
+
+
+
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    text-transform: uppercase;
+    text-shadow: 15px 15px 3px dodgerblue, -15px -15px 3px dodgerblue;
+}
+
+/* radius değeri verilmiyor.
+yukarıdaki örnekteki gibi birden fazla gölgelendirme parametresi kullanılabilir. */

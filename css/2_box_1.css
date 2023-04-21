@@ -1,0 +1,24 @@
+/* 2-) CSS box (Kutu) Modeli  */
+.box2 {
+    width: 150px;
+    height: 150px;
+    background: lime;
+    color: black;
+    text-align: center;
+    line-height: 150px;
+    border: 3px solid black;
+    margin: 30px;
+}
+
+/* 
+    width- genişlik
+    height- yükseklik
+    background- arka plan
+    color- renk
+    text-align- hizalama (yazıyı aynı satırda ortalar)
+    line-height- hizalama (yazıyı kutu içine ortalar)
+    border- çerçeve
+    margin- dış boşluk (kutunun her tarafından ...px verir, gözükmez)
+    
+ */
+ 

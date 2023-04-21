@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+
+    <link rel="stylesheet" href="/CSS/css/9_Pseudo_4.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- 
+        C)
+        :nth-child                  element gözetilerek baştan olmaz üzere verilen parametreye göre seçer
+        :nth-last-child             element gözetilerek sondan olmaz üzere verilen parametreye göre seçer
+        Bunlarda firs-child, last-child gibi çalışır
+
+        D)
+        :nth-of-type                element gözetmeksizin baştan olmaz üzere verilen parametreye göre seçer
+        :nth-last-of-type           element gözetmeksizin sondan olmaz üzere verilen parametreye göre seçer
+        Bunlarda first-of-type, last-of-type gibi çalışır
+
+        E)
+        ::first-line                cümledeki ilk satırı seçer
+        ::first-letter              cümledeki lik karakteri seçer
+
+
+        F)
+        Parametreler,
+        normal sayıların kullanılabildiği gibi bu parametreler de kullanılabiir
+        parametresi odd ile tek sayılar
+        parametresi even ile çift sayılar
+
+
+
+        G)
+        ::before        etiket içerisinde öncesine kelime, element, işaret, resim... kullanılır
+        ::after         etiket içerisinde sonrasına (kelime, element, işaret, resim.... kullanılır
+ -->
+
+
+
+    <!-- C) -->
+    <div>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h2>HTML - CSS - Js</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+
+
+    <!--  E) -->
+    <div>
+        <h3>Lorem ipsum dolor sit amet.<br>
+            Lorem ipsum dolor sit amet.
+        </h3>
+    </div>
+
+
+
+    <!-- F) -->
+    <div>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+    </div>
+
+
+
+<!-- G) -->
+<a href="#">Tıklayın</a>
+
+
+
+
+
+</body>
+
+</html>

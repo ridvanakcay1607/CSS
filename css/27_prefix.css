@@ -1,0 +1,46 @@
+p {
+    line-height: 30px;
+    padding: 50px;
+}
+
+
+p {
+    background-image: linear-gradient(to bottom left,
+            rgb(19, 226, 19),
+            rgb(61, 61, 233));
+    color: white;
+}
+
+
+
+p {
+    background-image: -webkit-linear-gradient(to bottom left,
+            rgb(19, 226, 19),
+            rgb(61, 61, 233));
+    color: white;
+}
+
+
+
+p {
+    background-image: -moz-linear-gradient(to bottom left,
+            rgb(19, 226, 19),
+            rgb(61, 61, 233));
+    color: white;
+}
+
+
+p {
+    background-image: -o-linear-gradient(to bottom left,
+            rgb(19, 226, 19),
+            rgb(61, 61, 233));
+    color: white;
+}
+
+
+p {
+    background-image: -ms-linear-gradient(to bottom left,
+            rgb(19, 226, 19),
+            rgb(61, 61, 233));
+    color: white;
+}

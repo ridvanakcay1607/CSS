@@ -1,0 +1,18 @@
+.box {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-color: red;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+    filter: alpha(opacity=50);
+}
+
+/* ie 8 ve önceki sürümlerde de bu özellik çalışması için extra olarak
+filter: alpha(opacity=50); kodu eklenir.
+*/

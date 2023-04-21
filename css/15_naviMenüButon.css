@@ -1,0 +1,46 @@
+nav ul li {
+    display: inline-block;
+}
+
+
+
+/* display: inline-block; 
+ile butonlar satır olarak hizalanır
+ */
+
+
+
+nav ul li a {
+    display: block;
+    background-color: dodgerblue;
+    color:white;
+    height: 30px;
+    padding: 0 20px;
+    margin: 5px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 300ms all;
+}
+/* a etiketine width ve height değerleri verebilmek için 
+ display: block; verildi  */
+
+
+
+
+ nav ul li:not(:last-child){
+    margin-right: 10px;
+ }
+ /* not(:last-child) ile son çocuk nesnesi olmayan bütün nesnelere
+ margin-right: 10px; uygula deniliyor.
+ son çocuk nesnesi Team den sonra 10px boşluk oluşmaz */
+
+
+
+ nav ul li a:hover{
+    background-color:orangered;
+ }
+ /* :hover
+ butonların üzerine gelindiğinde renk değiştirmesini sağlar */

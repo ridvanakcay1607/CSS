@@ -1,0 +1,114 @@
+/* C) */
+/* :nth-child   */
+p:nth-child(2) {
+    background-color: lightpink;
+}
+
+/* parametre olarak 2 verildiği için ve baştan ikinci element de p etiketi
+olduğu için seçilebilidi. Eğer baştan ikinci p olmasaydı seçilme olmazdı */
+
+
+
+
+/* :nth-last-child  */
+h2:nth-last-child(3) {
+    background-color: khaki;
+}
+
+/* parametre olarak 3 verildiği için ve sondan üçüncü element de h2 etiketi
+olduğu için seçilebilidi. Eğer sondan üçüncü h2 olmasaydı seçilme olmazdı */
+
+
+
+/* D) */
+/* :nth-of-type  */
+p:nth-of-type(3) {
+    background-color: fuchsia;
+}
+
+/* sadece aynı olan elementlerin içine bakar ve  verilen parametre sayısını seçer.
+örnekte p etikteti yazıldığından p ler arasından en baştan parametresi 3 olan p seçildi */
+
+
+
+
+/* :nth-last-of-type  */
+p:nth-last-of-type(2) {
+    background-color: lawngreen;
+}
+
+
+
+
+
+/* E) */
+/*  ::first-line  */
+h3:nth-last-child(1)::first-line {
+    background-color: orangered;
+}
+
+
+/*  ::first-letter  */
+h3:nth-last-child(1)::first-letter {
+    background-color: lightseagreen;
+}
+
+
+
+
+
+/* F) */
+/* odd */
+h4:nth-of-type(odd) {
+    background-color: royalblue;
+}
+
+
+h4:nth-of-type(even) {
+    background-color: mediumpurple;
+}
+
+
+
+
+
+
+/* G) */
+
+a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: dodgerblue;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* 
+    text-decoration: none; default olan altı çizgiyi kaldırır
+    text-align: center; yatay olarak yazıyı ortalar
+    line-height: 25px; dikey olarak ortalar
+*/
+
+a::before {
+    content: "\271A";
+    background-color: crimson;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 30px;
+}
+
+/*
+    ::before ve ::after çok güçlü css yeteneklerine sahip
+    content: özelliği ile öncesine yazı yazılır.
+
+    ::after da ise left yerine right değeri verilerek sona alınır
+
+
+*/

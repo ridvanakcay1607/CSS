@@ -1,0 +1,53 @@
+/* 1-)link 
+ziyaretçi tarafından henüz açılmamış olan elementin default değeridir */
+
+a:link {
+    color:orange;
+    text-decoration: none;
+    }
+
+/*
+text-decoration: none;
+özelliği ile default olarak gelen 
+alt çizgiyi kaldırır 
+*/
+
+
+
+/* 2-) hover 
+link üzerine gelindiğinde farenin tetiklenmesini sağlar
+en çok kullanılan Pseudo class ı budur.*/
+
+a:hover{
+    color:green ;
+}
+/* link üzerine gelindiğinde link yeşil renk alır */
+
+
+
+
+/* 3-) active
+link e tıklayıp bırakılmadığı ana kadar verilen özellktir, odaklanır*/
+
+a:active{
+    color: red;
+}
+
+
+
+
+
+/* 4-) visited
+ziyaret edildikten sonraki link in görüşünü belirler  */
+
+a:visited{
+    color:fuchsia;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* justify-content: center; ile 
+   menü sayfanın ortasına alındı*/
+
+
+
+nav {
+
+    background-color:greenyellow;
+    width: 300px;
+    padding: 30px;
+}
+
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    transition: 300ms all;
+}
+/*
+    padding: ile butonlar arasın mesafe ayarlandı.
+    border-bottom: ile butonların altına çerçeve eklendi  
+    cursor: pointer; ile butonların üzerine gelinddiğinde 
+    el simgesi çıkarılır
+    transition: ile geçiş rengi yumuşatılır. hover özelliği
+    hangi etikete verilmişse ona transition verilir.
+*/
+
+nav ul li:last-child{
+    border: none;
+}
+/* en sondaki 7 numaralı butonun alt çerçevesi kaldırıldı  */
+
+
+
+
+nav ul li a {
+    color:black ;
+    text-transform: uppercase;
+}
+
+
+nav ul li span {
+    float: right;
+    color: black;
+}
+
+/* float: right; ile span numaraları sağa yaslandı */
+
+
+
+nav ul li:hover {
+    background-color:dodgerblue;
+    padding: 20px 30px;
+}
+
+/* hover: butonlar üzerine gelindiğinde background color 
+rengi değişmesi için kullanılır 
+padding: ile üzerine gelinen butona fokuslanması sağlandı
+*/

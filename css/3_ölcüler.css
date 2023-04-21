@@ -1,0 +1,33 @@
+/* 
+    3-) Ölçüler 
+    mutlak-kesin-absolute; in, cm, mm, pt, pc  (daha çok basılı yayıncılık sisteminde kullanılır, digital de pek kullanılmıyor)
+    kesin olmayan relative ; em, ex, px, %, rem, vh(viewheight), vw(viewwidht)
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.box3 {
+    width: 50%;
+    height: 100vh;
+    background-color: orangered;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* vh  :
+    bulunduğu ekranın yüksekliğini tam olarak kaplar.
+
+    ayrıca box3 için ölçü verildiğinde köşelerde boşluk kalıyor. 
+    boşluk olmaması için ölçülerin body ye verilmesi gerekiyor
+*/
+
+

@@ -1,0 +1,88 @@
+body {
+    height: 2000px;
+}
+
+/* aşağı yukarı kaydırma çubuğunun(scrullbar) gelmesi için yükseklik artırıldı */
+
+
+
+/* position: fixed */
+.box1 {
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+    color: blue;
+    position: fixed;
+
+}
+
+/* fixed özelliği
+scrullbar kaydırılsa dahi box un bulunduğu alanda kalmasını sağlar */
+
+
+
+
+/* position: absolute */
+.box2 {
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    left: auto;
+    top: 250px;
+}
+
+/* bir elementin static durumdan dinamik duruma çevrilesini yani askıda olmasını sağlar,
+ scrullbar kaydırıldığında fixed gibi durmaz kaybolur.
+ 
+ NOT: position: absolute özelliği daha çok position: relative ile birlikte kullanılır */
+
+
+
+
+/* position: absolute ve position: relative birlikte kullanımı */
+.p {
+    width: 300px;
+    height: 300px;
+    background-color: springgreen;
+    position: relative;
+    left: auto;
+    top: 500px;
+}
+
+.box3 {
+    background-color:black;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 4;
+}
+/* normalde siyah olan box tarayıcının en alt sağ köşesinde olmalıydı fakat
+p class ına position: relative özelliği vererek, tarayıcıdan relativ özelliği alındı.*/
+
+
+
+
+
+/* z-index kullanımı  */
+.box3:last-child{
+    background-color: grey;
+    bottom: 30px;
+    right: 30px;
+    z-index: 3;
+
+}
+
+/* gri renkli box sonradan eklenen olduğu için siyah kutunun üzerine çıktı ve web 
+siteleri oluştururken bunların yerleri değiştirilmek istenebilir işte burada 
+z-index özelliği ortaya çıkıyor.
+şimdi her iki .box3 class larına z-index özelliği tanımlayalım ve değişikliği görelim.
+ve değişiklik sonrası siyah kutu gri kutuyu ezmiş oldu.
+ */

@@ -1,0 +1,63 @@
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+
+    border-top-style: dashed;
+    border-right-style: dotted;
+    border-bottom-style: outset;
+    border-left-style: solid;
+
+    border-top-color: darkslateblue;
+    border-right-color: yellow;
+    border-bottom-color: lightgreen;
+    border-left-color: cornflowerblue;
+}
+
+/*
+border
+sol-left        sağ-right           üst-top
+                                    alt-botton
+
+border: bütün değerler bir arada kullanılacak şekilde de 
+kullanılabilir.
+örn: border: 5px solid cornflowerblue; */
+
+
+
+.box2 {
+    width: 0px;
+    height: 0px;
+    background-color: skyblue;
+    border: 10px solid gold;
+    border-color: transparent green blue black;
+    border-width: 110px;
+}
+
+/* border lar üçgen şeklinde veriliyor. çerçeve hariç diğer kısımlar gözükmüyor ancak
+width ve heigth değerleir sıfırlanınca ve border-color verilince gözüküyor.
+aslında kutu 4 tane ücgenden oluşuyor.
+border-color: renklerine transparent özelliği verildiğinde ücgen gözükmez
+*/
+
+
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    border-radius: 10px 30px 60px 90px;
+}
+
+/*  border-radius: ile border yumuşatılıyor ve ayrı yarı ölçü verilebiliyor.
+border-radius: aynı zamanda yuvarlak oluşturmak içinde kullanılor bunu yapmak için 
+width ve heigth değerleri ile border-radius: a aynı ölçü verilir.
+
+Ayrıca sadece belirli bir köşe yumuşatılmak istenirse
+border-bottom-left-radius: 50%;  örneği gibi uygulanır
+*/

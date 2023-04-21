@@ -1,0 +1,14 @@
+p {
+    padding: 50px;
+    background-color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    font-weight: lighter;
+    line-height: 30px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    text-decoration:none;
+    text-indent: 50px;
+    text-transform: lowercase;
+}

@@ -1,0 +1,64 @@
+body {
+    height: 2000px;
+}
+
+/* background-repeat: verilen resmin arka planda tekrar edip 
+   etmeyeceğini belirler.
+   bu özellik body de background-image: verildikten sonra tanımlanır
+
+   background-size: 
+   cover ile; verilen resmi uzatarak ekrana yerleştirir.
+   contain ile; resmi en ve boya göre arka plana yerleştirir.
+
+   background: ile ise ayrı ayrı tanımalann özellikler bunun içinde
+   verilebilir. Fakat bu tercih edilmez, karışıklık olması nedeniyle
+
+
+
+   linear-gradient:
+   ile köşelerden başlayarak solid ve geçişli renkler oluşturulur
+   önn 1: background-image: linear-gradient(lime, blue);
+   örn 2: background-image: linear-gradient(
+   rgba(0, 255, 0, 0.481),
+   rgba(0, 0, 255, 0.46)), 
+   url(/CSS/image/bild01.jpg);
+
+   radial-gradient:
+   ile ortadan çevrisene doğru solid ve geçişli renkler oluşturulur.
+   örn:  background-image: radial-gradient(
+   rgba(0, 255, 0, 0.481),
+   rgba(0, 0, 255, 0.46)),
+   url(/CSS/image/bild01.jpg);
+
+   radial-gradient: extra olarak circle ve ellips özellikleriyle de ölçüler
+   vererek geçişli renkler çeşitlendirilebilir.
+
+   circle at %50 %70
+   ellips at %40 %60
+
+
+   */
+
+
+
+.box {
+    background-image: url(/CSS/image/bild02.png);
+    background-size: cover;
+    width: 150%;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: right bottom;
+
+}
+
+/* background-size: resmi tam olarak kutuya yerleştir.
+   background-attachment: fixed; ile resim sabit kalır.
+   background konumu için birden fazla değer alır.
+
+   left top: default
+   %0 %0 (left ve top u temsil eder)
+   right top
+   center top
+   center center
+   right bottom   
+*/
